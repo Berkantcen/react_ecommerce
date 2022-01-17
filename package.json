@@ -1,0 +1,38 @@
+{
+  "name": "react_ecommerce",
+  "version": "1.0.0",
+  "description": "MERN shopping Cart",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Berkantcen/react_ecommerce.git"
+  },
+  "keywords": [],
+  "author": "Berkant CEN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Berkantcen/react_ecommerce/issues"
+  },
+  "homepage": "https://github.com/Berkantcen/react_ecommerce#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.1.6"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
